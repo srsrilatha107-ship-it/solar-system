@@ -1,0 +1,177 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    border: 10px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./abstract-1773056942846-8752.jpg);
+    background-size: cover;
+    perspective: 800px;
+    
+}
+#sun{
+    height: 270px;
+    width: 270px;
+    aspect-ratio: 1/1;
+    /*border: 3px solid black;*/
+    position: absolute;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/049/667/553/small/sun-s-fiery-surface-with-transparent-background-a-glowing-celestial-body-with-intricate-details-png.png);
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;   
+    border-radius: 50%;
+    box-shadow: inset -0.4px -0.4px 100px gold,
+        0px 0px 100px 4px gold;
+    animation: rotateorbit 16s linear infinite;
+
+}
+#orbit1{
+    height: 370px;
+    width: 370px;
+    /*border: 3px solid black;*/
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 8s linear infinite;
+
+   
+}
+@keyframes rotateorbit {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+    
+
+#mercury{
+    height: 50px;
+    width: 50px;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+   
+   position: absolute;
+    top:200px;
+    right: 350px;
+    /*background-color: aqua;
+    transform: translate(-50%,-50%);*/
+    background-image: url(https://p7.hiclipart.com/preview/640/93/309/planet-mercury-earth-planet.jpg);
+    background-size: cover;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 10s linear infinite;
+    box-shadow: 0px 0px 700px 50px lightgrey;
+
+}
+#orbit2{
+    height: 490px;
+    width: 490px;
+    /*border: 3px solid black;*/
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 9s linear infinite;
+}
+#venus{
+    height: 100px;
+    width: 100px;
+    aspect-ratio: 1/1;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+   
+   position: absolute;
+    top: 440px;
+    right: 350px;
+    /*background-color: aqua;
+    transform: translate(-50%,-50%);*/
+    background-image: url(https://png.pngtree.com/png-vector/20240718/ourlarge/pngtree-venus-planet-on-transparent-background-png-image_13144097.png);
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 12s linear infinite;
+    box-shadow: 0px 0px 300px 30px tomato;
+}
+#orbit3{
+    height: 590px;
+    width: 590px;
+    /*border: 3px solid black;*/
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 11s linear infinite;
+}
+#earth{
+    height: 120px;
+    width:120px;
+    aspect-ratio: 1/1;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+   
+   position: absolute;
+   top: 640px;
+    
+    right: 350px;
+    /*background-color: aqua;
+    transform: translate(-50%,-50%);*/
+    background-image: url(https://img.freepik.com/premium-psd/realistic-earth-planet-globe-isolated-with-transparent-background_702390-622.jpg?semt=ais_rp_50_assets&w=740&q=80);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 14s linear infinite;
+    box-shadow: 0px 0px 150px 30px darkblue;
+}
+#orbit4{
+    height: 690px;
+    width: 690px;
+    /*border: 3px solid black;*/
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 13s linear infinite;
+}
+#mars{
+    height: 90px;
+    width:90px;
+    aspect-ratio: 1/1;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+   
+   position: absolute;
+   top: 820px;
+    
+    right: 350px;
+    /*background-color: aqua;
+    transform: translate(-50%,-50%);*/
+    background-image: url(https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2pvYjcyMy0yMjUtcC5wbmc.png);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+    animation: rotateorbit 16s linear infinite;
+    box-shadow: 0px 0px 150px 10px tomato;
+}
+
+
